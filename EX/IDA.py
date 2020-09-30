@@ -42,6 +42,7 @@ out = [{}] * n
 inOld = []
 outOld = []
 
+counter = 1
 while not((inn == inOld) and (out == outOld)):
     # Temp for store in_Old and out_Old
     inOld = inn.copy()
@@ -59,7 +60,6 @@ while not((inn == inOld) and (out == outOld)):
         outcopy = out.copy()
         inn[i] = newUnion(usecopy[i], newMinus(outcopy[i], deff[i]))
     
-    counter = 1
     print(str(counter) + " : ")
     print("Out")
     print(out)
