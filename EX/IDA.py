@@ -53,9 +53,7 @@ while not((inn == inOld) and (out == outOld)):
                 out[i] = newUnion(out[i], inn[j-1])
         
         # in[n] = use [n] U (out[n] - def[n])
-        usecopy = use.copy()
-        outcopy = out.copy()
-        inn[i] = newUnion(usecopy[i], newMinus(outcopy[i], deff[i]))
+        inn[i] = newUnion(use[i], newMinus(out[i], deff[i]))
     
     print(str(counter) + " : ")
     print("Out")
