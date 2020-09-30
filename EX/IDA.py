@@ -1,7 +1,4 @@
 # Python cann't union first set is empty set
-from typing import Counter
-
-
 def newUnion(A, B):
     setA = A.copy()
     setB = B.copy()
